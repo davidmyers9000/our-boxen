@@ -83,6 +83,12 @@ node default {
     version => '2.0.0-p0'
   }
 
+  # for colors in terminal
+  package { 'coreutils':
+    ensure   => present
+  }
+
+
   # common, useful packages
   package {
     [

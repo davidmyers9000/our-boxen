@@ -1,32 +1,8 @@
-# Our Boxen
-
-This is a template Boxen project designed for your organization to fork and
-modify appropriately.
-The Boxen rubygem and the Boxen puppet modules are only a framework for getting
-things done.
-This repository template is just a basic example of _how_ to do things with them.
+# That-Spot Boxen
 
 ## Getting Started
 
-To give you a brief overview, we're going to:
-
-* Install dependencies (basically XCode)
-* Bootstrap a boxen for your self/team/org/company
-* Then convert your local copy of that boxen to the post-bootstrapped version
-
-There are a few potential conflicts to keep in mind.
-Boxen does its best not to get in the way of a dirty system,
-but you should check into the following before attempting to install your
-boxen on any machine (we do some checks before every Boxen run to try
-and detect most of these and tell you anyway):
-
-* Boxen __requires__ at least the XCode Command Line Tools installed.
-* Boxen __will not__ work with an existing rvm install.
-* Boxen __may not__ play nice with an existing rbenv install.
-* Boxen __may not__ play nice with an existing chruby install.
-* Boxen __may not__ play nice with an existing homebrew install.
-* Boxen __may not__ play nice with an existing nvm install.
-* Boxen __recommends__ installing the full XCode.
+Open up the [That-Spot Boxen Homepage](https://that-spot-boxen.herokuapp.com) and run the shell command.
 
 ### Dependencies
 
@@ -41,28 +17,6 @@ How do you do it?
 1. Open the Preferences window (`Cmd-,`).
 1. Go to the Downloads tab.
 1. Install the Command Line Tools.
-
-### Bootstrapping
-
-Create a **new** git repository somewhere.
-It can be private or public -- it really doesn't matter.
-If you're making a repository on GitHub, you _may not_ want to fork this repo
-to get started.
-The reason for that is that you can't really make private forks of public
-repositories easily.
-
-Once you've done that, you can run the following to get bootstrap
-your boxen:
-
-```
-sudo mkdir -p /opt/boxen
-sudo chown ${USER}:admin /opt/boxen
-git clone https://github.com/boxen/our-boxen /opt/boxen/repo
-cd /opt/boxen/repo
-git remote rm origin
-git remote add origin <the location of my new git repository>
-git push -u origin master
-```
 
 ### Distributing
 

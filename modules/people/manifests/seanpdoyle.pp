@@ -1,10 +1,13 @@
 class people::seanpdoyle {
-  $me       = "seanpdoyle"
-  $home     = "/Users/${me}"
+  $home     = "/Users/seandoyle"
   $dotfiles = "${home}/dotfiles"
+  
+  file { $home:
+    ensure   => directory
+  }
 
   repository { $dotfiles:
-    source  => '${me}/dotfiles',
-    require => File[$home]
+    source   => '${home}/dotfiles',
+    require  => File[$home]
   }
 }
