@@ -56,6 +56,9 @@ node default {
   include nginx
   include nvm
 
+  # terminal
+  include zsh
+
   # sublime for text editing
   include sublime_text_2
 
