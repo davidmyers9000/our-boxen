@@ -7,7 +7,7 @@ class people::seanpdoyle {
   }
 
   repository { $dotfiles:
-    source   => '${home}/dotfiles',
+    source   => 'seanpdoyle/dotfiles',
     require  => File[$home]
   }
 }
