@@ -56,10 +56,13 @@ node default {
   include nginx
   include nvm
 
+  # sublime for text editing
+  include sublime_text_2
+
   # fail if FDE is not enabled
-  if $::root_encrypted == 'no' {
-    fail('Please enable full disk encryption and try again')
-  }
+  # if $::root_encrypted == 'no' {
+  #   fail('Please enable full disk encryption and try again')
+  # }
 
   # node versions
   include nodejs::0-4
@@ -71,6 +74,11 @@ node default {
   include ruby::1_9_2
   include ruby::1_9_3
   include ruby::2_0_0
+  
+  # ensure ruby 2.0.0 is the global install
+  class { 'ruby::global':
+    version => '2.0.0-p0'
+  }
 
   # common, useful packages
   package {
