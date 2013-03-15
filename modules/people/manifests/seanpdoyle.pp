@@ -5,6 +5,6 @@ class people::seanpdoyle {
 
   repository { $dotfiles:
     source  => '${me}/dotfiles',
-    require => File[$my]
+    require => File[$home]
   }
 }
