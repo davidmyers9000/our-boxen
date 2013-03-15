@@ -33,7 +33,17 @@ github "sudo",     "1.0.0"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 github "osx",            "1.0.0"
+github "sysctl",         "1.0.0"
 github "zsh",            "1.0.0"
 github "sublime_text_2", "1.1.0"
 github "xquartz",        "1.0.0"
+
+# development tools
 github "vagrant",        "1.0.0"
+github "elasticsearch",  "1.0.0"
+github "imagemagick",    "1.0.0"
+github "postgresql",     "1.0.0"
+github "java",           "1.0.6"
+
+# niceties
+github "chrome",         "1.1.0"
