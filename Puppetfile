@@ -40,6 +40,9 @@ github "xquartz",        "1.0.0"
 
 # development tools
 github "vagrant",        "1.0.0"
+github "virtualbox",     "1.0.1"
+
+# dependencies
 github "elasticsearch",  "1.0.0"
 github "imagemagick",    "1.0.0"
 github "postgresql",     "1.0.0"

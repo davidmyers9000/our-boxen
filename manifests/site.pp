@@ -64,6 +64,7 @@ node default {
 
   # for testing clusters
   include vagrant
+  include virtualbox
 
   # fail if FDE is not enabled
   # if $::root_encrypted == 'no' {

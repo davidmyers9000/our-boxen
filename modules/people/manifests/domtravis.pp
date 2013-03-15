@@ -1,6 +1,6 @@
 class people::domtravis {
   $home     = "/Users/${::luser}"
-  $dotfiles = "${home}/dotfiles"
+  $dotfiles = "${home}/.dotfiles"
   
   file { $home:
     ensure   => directory
@@ -13,6 +13,7 @@ class people::domtravis {
 
   # included niceties
   include chrome
+  
   include projects::that-spot
   include projects::that-spot-ui
 }

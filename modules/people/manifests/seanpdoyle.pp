@@ -1,6 +1,6 @@
 class people::seanpdoyle {
   $home     = "/Users/seandoyle"
-  $dotfiles = "${home}/dotfiles"
+  $dotfiles = "${home}/.dotfiles"
   
   file { $home:
     ensure   => directory
