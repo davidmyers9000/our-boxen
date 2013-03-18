@@ -1,5 +1,5 @@
 class people::seanpdoyle {
-  $home     = "/Users/${::luser}"
+  $home     = "/Users/seanpdoyle"
   $dotfiles = "${home}/.dotfiles"
   
   file { $home:
@@ -7,7 +7,7 @@ class people::seanpdoyle {
   }
 
   repository { $dotfiles:
-    source   => '${::luser}/dotfiles',
+    source   => 'seanpdoyle/dotfiles',
     require  => File[$home]
   }
 
