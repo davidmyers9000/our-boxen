@@ -1,5 +1,5 @@
 class people::seanpdoyle {
-  $home     = "/Users/seandoyle"
+  $home     = "/Users/${::luser}"
   $dotfiles = "${home}/.dotfiles"
   
   file { $home:
@@ -7,7 +7,7 @@ class people::seanpdoyle {
   }
 
   repository { $dotfiles:
-    source   => 'seanpdoyle/dotfiles',
+    source   => '${::luser}/dotfiles',
     require  => File[$home]
   }
 
@@ -15,6 +15,5 @@ class people::seanpdoyle {
   include chrome
 
   # included projects
-  include projects::that-spot
-  include projects::that-spot-ui
+  include projects::all
 }
