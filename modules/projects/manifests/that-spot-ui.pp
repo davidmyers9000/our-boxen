@@ -1,4 +1,7 @@
 class projects::that-spot-ui {
+  # browsers
+  include chrome
+  include firefox
   include phantomjs
   
   boxen::project { 'that-spot-ui':

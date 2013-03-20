@@ -48,7 +48,8 @@ github "imagemagick",    "1.0.0"
 github "postgresql",     "1.0.0"
 github "java",           "1.0.6"
 
+# browsers
+github "chrome",         "1.1.0"
+github "firefox",        "1.0.3"
 github "phantomjs",      "1.0.0"
 
-# niceties
-github "chrome",         "1.1.0"
