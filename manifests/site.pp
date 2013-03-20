@@ -79,6 +79,11 @@ node default {
   include ruby::1_9_3
   include ruby::2_0_0
 
+  ruby::gem { 'foreman for 2.0.0-p0':
+    gem     => 'foreman',
+    ruby    => '2.0.0-p0'
+  }
+
   # common, useful packages
   package {
     [

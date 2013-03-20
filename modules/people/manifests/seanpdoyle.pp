@@ -24,6 +24,7 @@ class people::seanpdoyle {
 
   boxen::osx_defaults { 'finder should show hidden icons':
     ensure => present,
+    user   => $::boxen_user,
     domain => 'com.apple.finder',
     key    => 'AppleShowAllFiles',
     value  => true
@@ -31,6 +32,7 @@ class people::seanpdoyle {
 
   boxen::osx_defaults { "don't show dock as a space":
     ensure => present,
+    user   => $::boxen_user,
     domain => 'com.apple.dock',
     key    => 'dashboard-in-overlay',
     value  => false
@@ -38,6 +40,7 @@ class people::seanpdoyle {
 
   boxen::osx_defaults { 'disable dashboard':
     ensure => present,
+    user   => $::boxen_user,
     domain => 'com.apple.dashboard',
     key    => 'mcx-disabled',
     value  => true
@@ -45,6 +48,7 @@ class people::seanpdoyle {
 
   boxen::osx_defaults { 'hide useless menu icons':
     ensure => present,
+    user   => $::boxen_user,
     domain => 'com.apple.systemuiserver',
     key    => 'menuExtras',
     value  => [
@@ -55,15 +59,9 @@ class people::seanpdoyle {
     ]
   }
 
-  boxen::osx_defaults { 'use AirDrop everywhere':
-    ensure => present,
-    domain => 'com.apple.NetworkBrowser',
-    key    => 'BrowseAllInterfaces',
-    value  => 1
-  }
-
   boxen::osx_defaults { 'always show scrollbars':
     ensure => present,
+    user   => $::boxen_user,
     domain => 'NSGlobalDomain',
     key    => 'AppleShowScrollBars',
     value  => 'Always'
@@ -71,6 +69,7 @@ class people::seanpdoyle {
 
   boxen::osx_defaults { 'check for software updates daily':
     ensure => present,
+    user   => $::boxen_user,
     domain => 'com.apple.SoftwareUpdate',
     key    => 'ScheduleFrequency',
     value  => 1
@@ -79,6 +78,7 @@ class people::seanpdoyle {
   # Trackpad Configuration
   boxen::osx_defaults { 'disable tap to click':
     ensure => present,
+    user   => $::boxen_user,
     domain => 'NSGlobalDomain',
     key    => 'com.apple.mouse.tapBehavior',
     value  => 0
@@ -86,6 +86,7 @@ class people::seanpdoyle {
 
   boxen::osx_defaults { 'disable "natural" style scrolling':
     ensure => present,
+    user   => $::boxen_user,
     domain => 'NSGlobalDomain',
     key    => 'com.apple.swipescrolldirection',
     value  => false
@@ -93,6 +94,7 @@ class people::seanpdoyle {
 
   boxen::osx_defaults { 'enable full keyboard tabbing':
     ensure => present,
+    user   => $::boxen_user,
     domain => 'NSGlobalDomain',
     key    => 'AppleKeyboardUIMode',
     value  => 3
@@ -100,8 +102,17 @@ class people::seanpdoyle {
 
   boxen::osx_defaults { 'top-right for all windows':
     ensure => present,
+    user   => $::boxen_user,
     domain => 'com.apple.dock',
     key    => 'wvous-tr-corner',
     value  => 3
+  }
+
+  boxen::osx_defaults { 'top-right modifier for all windows':
+    ensure => present,
+    user   => $::boxen_user,
+    domain => 'com.apple.dock',
+    key    => 'wvous-tr-modifier',
+    value  => 0
   }
 }

@@ -36,7 +36,6 @@ github "osx",            "1.0.0"
 github "sysctl",         "1.0.0"
 github "zsh",            "1.0.0"
 github "sublime_text_2", "1.1.0"
-github "xquartz",        "1.0.0"
 
 # development tools
 github "vagrant",        "1.0.0"

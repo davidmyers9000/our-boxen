@@ -114,11 +114,6 @@ GITHUBTARBALL
     virtualbox (1.0.1)
 
 GITHUBTARBALL
-  remote: boxen/puppet-xquartz
-  specs:
-    xquartz (1.0.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-zsh
   specs:
     zsh (1.0.0)
@@ -159,6 +154,5 @@ DEPENDENCIES
   sysctl (= 1.0.0)
   vagrant (= 1.0.0)
   virtualbox (= 1.0.1)
-  xquartz (= 1.0.0)
   zsh (= 1.0.0)
 

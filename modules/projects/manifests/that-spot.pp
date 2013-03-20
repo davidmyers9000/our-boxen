@@ -1,4 +1,5 @@
 class projects::that-spot {
+  include imagemagick
 
   boxen::project { 'that-spot':
     dotenv        => true,
