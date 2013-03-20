@@ -35,6 +35,7 @@ github "sudo",     "1.0.0"
 github "osx",            "1.0.0"
 github "sysctl",         "1.0.0"
 github "zsh",            "1.0.0"
+github "iterm2",         "1.0.1"
 github "sublime_text_2", "1.1.0"
 
 # development tools

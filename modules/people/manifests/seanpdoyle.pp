@@ -2,6 +2,9 @@ class people::seanpdoyle {
   # included projects
   include projects::all
 
+  # Stable release
+  include iterm2::stable
+
   $home     = "/Users/seanpdoyle"
   $dotfiles = "${home}/.dotfiles"
   
