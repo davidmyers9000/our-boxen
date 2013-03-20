@@ -19,6 +19,11 @@ GITHUBTARBALL
     elasticsearch (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-firefox
+  specs:
+    firefox (1.0.3)
+
+GITHUBTARBALL
   remote: boxen/puppet-gcc
   specs:
     gcc (1.0.0)
@@ -133,6 +138,7 @@ DEPENDENCIES
   chrome (= 1.1.0)
   dnsmasq (= 1.0.0)
   elasticsearch (= 1.0.0)
+  firefox (= 1.0.3)
   gcc (= 1.0.0)
   git (= 1.1.0)
   homebrew (= 1.1.2)

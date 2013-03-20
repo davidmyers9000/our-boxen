@@ -52,4 +52,3 @@ github "java",           "1.0.6"
 github "chrome",         "1.1.0"
 github "firefox",        "1.0.3"
 github "phantomjs",      "1.0.0"
-
