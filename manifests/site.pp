@@ -90,6 +90,19 @@ node default {
     ruby    => '2.0.0-p0'
   }
 
+
+  git::config::global { [
+    'color.diff',
+    'color.status',
+    'color.branch'
+  ]:
+    value => 'auto'
+  }
+  
+  git::config::global {'color.ui':
+    value => true
+  }
+
   # common, useful packages
   package {
     [
