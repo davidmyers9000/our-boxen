@@ -39,7 +39,7 @@ github "iterm2",         "1.0.1"
 github "sublime_text_2", "1.1.0"
 
 # development tools
-github "vagrant",        "1.0.0"
+github "vagrant",        "1.0.1"
 github "virtualbox",     "1.0.1"
 
 # dependencies

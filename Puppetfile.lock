@@ -111,7 +111,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-vagrant
   specs:
-    vagrant (1.0.0)
+    vagrant (1.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-virtualbox
@@ -158,7 +158,7 @@ DEPENDENCIES
   sublime_text_2 (= 1.1.0)
   sudo (= 1.0.0)
   sysctl (= 1.0.0)
-  vagrant (= 1.0.0)
+  vagrant (= 1.0.1)
   virtualbox (= 1.0.1)
   zsh (= 1.0.0)
 
