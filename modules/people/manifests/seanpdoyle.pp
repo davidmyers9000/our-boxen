@@ -92,7 +92,7 @@ class people::seanpdoyle {
     user   => $::boxen_user,
     domain => 'NSGlobalDomain',
     key    => 'com.apple.swipescrolldirection',
-    value  => false
+    value  => true
   }
 
   boxen::osx_defaults { 'enable full keyboard tabbing':
