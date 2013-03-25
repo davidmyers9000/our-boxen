@@ -44,7 +44,7 @@ github "virtualbox",     "1.0.1"
 
 # dependencies
 github "elasticsearch",  "1.0.0"
-github "imagemagick",    "1.0.0"
+github "imagemagick",    "1.0.1", :repo => "shazino/puppet-imagemagick"
 github "postgresql",     "1.0.0"
 github "java",           "1.0.6"
 

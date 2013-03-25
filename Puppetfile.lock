@@ -44,11 +44,6 @@ GITHUBTARBALL
     hub (1.0.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-imagemagick
-  specs:
-    imagemagick (1.0.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-iterm2
   specs:
     iterm2 (1.0.1)
@@ -133,6 +128,11 @@ GITHUBTARBALL
   specs:
     stdlib (3.2.0)
 
+GITHUBTARBALL
+  remote: shazino/puppet-imagemagick
+  specs:
+    imagemagick (1.0.1)
+
 DEPENDENCIES
   boxen (= 1.2.0)
   chrome (= 1.1.0)
@@ -143,7 +143,7 @@ DEPENDENCIES
   git (= 1.1.0)
   homebrew (= 1.1.2)
   hub (= 1.0.0)
-  imagemagick (= 1.0.0)
+  imagemagick (= 1.0.1)
   inifile (= 0.9.0)
   iterm2 (= 1.0.1)
   java (= 1.0.6)
