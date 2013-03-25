@@ -62,6 +62,9 @@ node default {
   # sublime for text editing
   include sublime_text_2
 
+  # propane for campfire
+  include propane
+
   # for testing clusters
   include vagrant
   include virtualbox
@@ -79,15 +82,17 @@ node default {
   include ruby::1_9_3
   include ruby::2_0_0
 
+  $rubyversion = '2.0.0-p0'
 
-  ruby::gem { 'heroku for 2.0.0-p0':
+
+  ruby::gem { "heroku for ${rubyversion}":
     gem     => 'heroku',
-    ruby    => '2.0.0-p0'
+    ruby    => $rubyversion
   }
 
-  ruby::gem { 'foreman for 2.0.0-p0':
+  ruby::gem { "foreman for ${rubyversion}":
     gem     => 'foreman',
-    ruby    => '2.0.0-p0'
+    ruby    => $rubyversion
   }
 
 
