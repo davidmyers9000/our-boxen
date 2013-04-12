@@ -38,6 +38,7 @@ github "zsh",            "1.0.0"
 github "iterm2",         "1.0.1"
 github "propane",        "1.0.0"
 github "sublime_text_2", "1.1.0"
+github "dropbox",        "1.1.0"
 
 # development tools
 github "vagrant",        "1.0.1"
