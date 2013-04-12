@@ -5,7 +5,7 @@ class people::seanpdoyle {
   # Stable release
   include iterm2::stable
 
-  $home     = "/Users/seanpdoyle"
+  $home     = "/Users/${::luser}"
   $dotfiles = "${home}/.dotfiles"
   
   file { $home:

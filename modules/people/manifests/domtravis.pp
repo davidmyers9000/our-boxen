@@ -1,4 +1,7 @@
 class people::domtravis {
+  # included projects
+  include projects::all
+  
   $home     = "/Users/${::luser}"
   $dotfiles = "${home}/.dotfiles"
   
@@ -13,7 +16,4 @@ class people::domtravis {
 
   # included niceties
   include chrome
-  
-  include projects::that-spot
-  include projects::that-spot-ui
 }

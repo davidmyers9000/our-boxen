@@ -50,11 +50,12 @@ Homebrew::Formula <| |> -> Package <| |>
 
 node default {
   # core modules, needed for most things
-  include dnsmasq
   include git
   include hub
+
+  # dns and proxy
+  include dnsmasq
   include nginx
-  include nvm
 
   # terminal
   include zsh
@@ -75,15 +76,13 @@ node default {
   # }
 
   # node versions
-  include nodejs::0-8
+  class { 'nodejs::global': version => 'v0.10.3' }
 
   # default ruby versions
   include ruby::1_8_7
-  include ruby::1_9_3
   include ruby::2_0_0
 
-  $rubyversion = '2.0.0-p0'
-
+  $rubyversion = '2.0.0'
 
   ruby::gem { "heroku for ${rubyversion}":
     gem     => 'heroku',
@@ -95,6 +94,20 @@ node default {
     ruby    => $rubyversion
   }
 
+  ruby::gem { "bundler for ${rubyversion}":
+    gem     => 'bundler',
+    ruby    => $rubyversion
+  }
+
+  ruby::gem { "rake for ${rubyversion}":
+    gem     => 'rake',
+    ruby    => $rubyversion
+  }
+
+  ruby::gem { "librarian-puppet for ${rubyversion}":
+    gem     => 'librarian-puppet',
+    ruby    => $rubyversion
+  }
 
   git::config::global { [
     'color.diff',

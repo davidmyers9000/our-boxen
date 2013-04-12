@@ -17,14 +17,14 @@ class projects::that-spot-ui {
     require => [Package['phantomjs'], File[$bindir]]
   }
 
-  ruby::gem { 'compass for 2.0.0-p0':
+  ruby::gem { 'compass for 2.0.0':
     gem     => 'compass',
-    ruby    => '2.0.0-p0'
+    ruby    => '2.0.0'
   }
   
   boxen::project { 'that-spot-ui':
     dotenv    => true,
-    nodejs    => '0.8',
+    nodejs    => 'v0.10.3',
     ruby      => '2.0.0',
     source    => 'seanpdoyle/that-spot-ui'
   }
