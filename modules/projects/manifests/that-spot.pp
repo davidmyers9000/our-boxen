@@ -1,5 +1,6 @@
 class projects::that-spot {
   include imagemagick
+  include phantomjs
 
   $project       = "that-spot"
 
