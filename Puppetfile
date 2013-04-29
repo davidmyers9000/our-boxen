@@ -14,7 +14,7 @@ end
 # config. Required.
 
 github "boxen",          "2.1.0"
-github "repository",     "2.0.1"
+github "repository",     "2.0.2"
 
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
@@ -29,6 +29,7 @@ github "nodejs",         "2.1.0"
 github "ruby",           "3.5.0"
 github "stdlib",         "3.2.0", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",           "1.0.0"
+github "libtool",        "1.0.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
