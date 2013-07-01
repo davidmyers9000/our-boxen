@@ -47,9 +47,11 @@ github "virtualbox",     "1.0.1"
 
 # dependencies
 github "elasticsearch",  "1.0.0"
+github "redis",          "1.0.0"
 github "xquartz",        "1.1.0"
 github "imagemagick",    "1.2.0"
 github "postgresql",     "1.0.0"
+github "mysql",          "1.1.0"
 github "java",           "1.0.6"
 
 # browsers
