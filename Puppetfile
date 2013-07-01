@@ -44,6 +44,7 @@ github "dropbox",        "1.1.0"
 # development tools
 github "vagrant",        "1.0.1"
 github "virtualbox",     "1.0.1"
+github "github_for_mac", "1.0.1"
 
 # dependencies
 github "elasticsearch",  "1.0.0"

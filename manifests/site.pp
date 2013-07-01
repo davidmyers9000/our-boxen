@@ -63,6 +63,7 @@ node default {
   # sublime for text editing
   include sublime_text_2
   include dropbox
+  include github_for_mac
 
   # propane for campfire
   include propane
