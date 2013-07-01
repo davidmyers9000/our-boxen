@@ -1,8 +1,8 @@
-# That-Spot Boxen
+# Fitly Boxen
 
 ## Getting Started
 
-Open up the [That-Spot Boxen Homepage](https://that-spot-boxen.herokuapp.com) and run the shell command.
+Open up the [Fitly Boxen Homepage](https://that-spot-boxen.herokuapp.com) and run the shell command.
 
 ### Dependencies
 
