@@ -5,6 +5,12 @@ class people::seanpdoyle {
   # Stable release
   include iterm2::stable
 
+  include osx::global::disable_remote_control_ir_receiver
+  
+  include osx::finder::show_all_on_desktop
+
+  include osx::dock::autohide
+
   $home     = "/Users/${::luser}"
   $dotfiles = "${home}/.dotfiles"
   

@@ -12,6 +12,7 @@ class projects::fitly-rails {
     nginx         => true,
     redis         => true,
     mysql         => true,
+    dotenv        => true,
     ruby          => '2.0.0-p0',
     source        => "fitly/$project"
   }

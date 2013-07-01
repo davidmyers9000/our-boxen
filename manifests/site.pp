@@ -72,6 +72,8 @@ node default {
   include vagrant
   include virtualbox
 
+  include osx::global::expand_save_dialog
+
   # fail if FDE is not enabled
   # if $::root_encrypted == 'no' {
   #   fail('Please enable full disk encryption and try again')
