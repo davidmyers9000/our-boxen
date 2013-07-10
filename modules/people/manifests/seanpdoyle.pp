@@ -4,6 +4,8 @@ class people::seanpdoyle {
 
   # Stable release
   include iterm2::stable
+  
+  include tmux
 
   include osx::global::disable_remote_control_ir_receiver
   

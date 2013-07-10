@@ -1,4 +1,9 @@
 GITHUBTARBALL
+  remote: boxen/puppet-asciiio
+  specs:
+    asciiio (1.0.2)
+
+GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
     boxen (2.1.0)
@@ -144,6 +149,11 @@ GITHUBTARBALL
     sysctl (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-tmux
+  specs:
+    tmux (1.0.2)
+
+GITHUBTARBALL
   remote: boxen/puppet-vagrant
   specs:
     vagrant (1.0.1)
@@ -174,6 +184,7 @@ GITHUBTARBALL
     stdlib (3.2.0)
 
 DEPENDENCIES
+  asciiio (= 1.0.2)
   boxen (= 2.1.0)
   chrome (= 1.1.0)
   dnsmasq (= 1.0.0)
@@ -205,6 +216,7 @@ DEPENDENCIES
   sublime_text_2 (= 1.1.0)
   sudo (= 1.0.0)
   sysctl (= 1.0.0)
+  tmux (= 1.0.2)
   vagrant (= 1.0.1)
   virtualbox (= 1.0.1)
   xquartz (= 1.1.0)

@@ -59,6 +59,7 @@ node default {
 
   # terminal
   include zsh
+  include asciiio
 
   # sublime for text editing
   include sublime_text_2
@@ -88,6 +89,11 @@ node default {
 
   $rubyversion = '2.0.0'
 
+  ruby::gem { "rails for ${rubyversion}":
+    gem     => 'rails',
+    ruby    => $rubyversion
+  }
+
   ruby::gem { "heroku for ${rubyversion}":
     gem     => 'heroku',
     ruby    => $rubyversion
@@ -103,13 +109,13 @@ node default {
     ruby    => $rubyversion
   }
 
-  ruby::gem { "rake for ${rubyversion}":
-    gem     => 'rake',
+  ruby::gem { "zeus for ${rubyversion}":
+    gem     => 'zeus',
     ruby    => $rubyversion
   }
 
-  ruby::gem { "librarian-puppet for ${rubyversion}":
-    gem     => 'librarian-puppet',
+  ruby::gem { "guard for ${rubyversion}":
+    gem     => 'guard',
     ruby    => $rubyversion
   }
 
