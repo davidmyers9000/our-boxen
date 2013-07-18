@@ -25,11 +25,13 @@ class projects::fitly-rails {
 
   file { "$home/.ec2/gsg-keypair":
     source        => "puppet:///modules/projects/${project}/gsg-keypair",
+    mode          => '0600',
     ensure        => present
   }
 
   file { "$home/.ec2/gsg-keypair.pub":
     source        => "puppet:///modules/projects/${project}/gsg-keypair.pub",
+    mode          => '0600',
     ensure        => present
   }
 }
