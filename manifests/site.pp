@@ -51,7 +51,6 @@ Homebrew::Formula <| |> -> Package <| |>
 node default {
   # core modules, needed for most things
   include git
-  include hub
 
   # dns and proxy
   include dnsmasq
@@ -65,9 +64,6 @@ node default {
   include sublime_text_2
   include dropbox
   include github_for_mac
-
-  # propane for campfire
-  include propane
 
   # for testing clusters
   include vagrant

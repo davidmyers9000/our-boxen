@@ -41,7 +41,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-git
   specs:
-    git (1.1.0)
+    git (1.2.4)
 
 GITHUBTARBALL
   remote: boxen/puppet-github_for_mac
@@ -192,7 +192,7 @@ DEPENDENCIES
   elasticsearch (= 1.0.0)
   firefox (= 1.0.3)
   gcc (= 1.0.0)
-  git (= 1.1.0)
+  git (= 1.2.4)
   github_for_mac (= 1.0.1)
   homebrew (= 1.1.2)
   hub (= 1.0.0)
