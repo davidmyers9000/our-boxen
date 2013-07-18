@@ -6,7 +6,8 @@ class projects::fitly-rails {
   include firefox
   include libtool
 
-  $project       = "fitly-rails"
+  $project       = 'fitly-rails'
+  $home          = "/Users/${::luser}"
 
   boxen::project { $project:
     nginx         => true,
@@ -14,11 +15,21 @@ class projects::fitly-rails {
     mysql         => true,
     dotenv        => true,
     ruby          => '2.0.0-p0',
-    source        => "fitly/$project"
+    source        => "fitly/${project}"
   }
 
   # this is a weird imagemagick versioning fix
   exec { 'brew unlink imagemagick && brew link imagemagick':
     require       => [Class['imagemagick'], Class['homebrew']]
+  }
+
+  file { "$home/.ec2/gsg-keypair":
+    source        => "puppet:///modules/projects/${project}/gsg-keypair",
+    ensure        => present
+  }
+
+  file { "$home/.ec2/gsg-keypair.pub":
+    source        => "puppet:///modules/projects/${project}/gsg-keypair.pub",
+    ensure        => present
   }
 }

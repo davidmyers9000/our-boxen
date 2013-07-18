@@ -14,6 +14,7 @@ DB_PORT: 3306
 DB_NAME: fitlydb
 DB_USERNAME: fitly
 DB_PASSWORD: fitlyfamily215
+DB_POOL: 30
 
 # Sidekiq Redis URL
 REDIS_URL: redis://localhost:16379

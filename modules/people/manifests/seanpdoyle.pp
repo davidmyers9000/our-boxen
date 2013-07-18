@@ -6,6 +6,8 @@ class people::seanpdoyle {
   include iterm2::stable
   
   include tmux
+  # for tmux
+  package { 'reattach-to-user-namespace': }
 
   include osx::global::disable_remote_control_ir_receiver
   
