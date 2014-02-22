@@ -55,21 +55,20 @@ github "xquartz",    "1.1.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
-github "osx",               "1.3.2"
+# github "osx",               "1.3.2"
 github "property_list_key", "0.1.0"
 github "sysctl",            "1.0.0"
 github "zsh",               "1.0.0"
 github "tmux",              "1.0.2"
 github "asciiio",           "1.0.2"
 github "iterm2",            "1.0.1"
-github "propane",           "1.0.0"
 github "sublime_text_2",    "1.1.0"
 github "dropbox",           "1.1.0"
 
 # development tools
-github "vagrant",        "1.0.1"
-github "virtualbox",     "1.0.1"
-github "github_for_mac", "1.0.1"
+# github "vagrant",        "1.0.1"
+# github "virtualbox",     "1.0.1"
+# github "github_for_mac", "1.0.1"
 
 # dependencies
 github "elasticsearch",  "1.0.0"
@@ -83,4 +82,4 @@ github "java",           "1.0.6"
 # browsers
 github "chrome",         "1.1.0"
 github "firefox",        "1.0.3"
-github "phantomjs",      "1.0.0"
+# github "phantomjs",      "1.0.0"
