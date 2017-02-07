@@ -11,7 +11,7 @@ Exec {
     "${boxen::config::home}/rbenv/shims",
     "${boxen::config::home}/rbenv/bin",
     "${boxen::config::home}/rbenv/plugins/ruby-build/bin",
-    "${boxen::config::home}/homebrew/bin",
+    "${boxen::config::homebrewdir}/bin",
     '/usr/bin',
     '/bin',
     '/usr/sbin',
@@ -80,15 +80,15 @@ node default {
   # }
 
   # node versions
-  include nodejs::v0_6
-  include nodejs::v0_8
-  include nodejs::v0_10
+  nodejs::version { '0.8': }
+  nodejs::version { '0.10': }
+  nodejs::version { '0.12': }
 
   # default ruby versions
-  include ruby::1_8_7
-  include ruby::1_9_2
-  include ruby::1_9_3
-  include ruby::2_0_0
+  ruby::version { '1.9.3': }
+  ruby::version { '2.0.0': }
+  ruby::version { '2.1.8': }
+  ruby::version { '2.2.4': }
 
   $rubyversion = '2.0.0'
 
